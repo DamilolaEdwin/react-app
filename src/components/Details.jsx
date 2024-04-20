@@ -1,11 +1,14 @@
 import useFetch from "../customHook/useFetch"
 import { useParams } from "react-router-dom"
+import Loader from "./Loader"
 
 function Details(){
     const {name} = useParams()
     const {repo, error, isLoading} = useFetch(`https://api.github.com/repos/DamilolaEdwin/${name}`)
     return(
         <>
+            {isLoading && <Loader/> } 
+            {error && <p>{error}</p>}
             <div>
                 <h3>{repo.name}</h3>
                 <p>{repo.description}</p>

@@ -67,7 +67,7 @@ button:focus-visible {
   }
 } */
 
-/* .custom-loader {
+ .custom-loader {
   width:100px;
   height:100px;
   border-radius:50%;
@@ -79,5 +79,4 @@ button:focus-visible {
   -webkit-mask-composite: destination-in;
   mask-composite: intersect;
   animation:s4 1s infinite steps(10);
-} */
-
+} 

@@ -7,12 +7,13 @@ function Home(){
     console.log(repo) 
     return(
         <>
-            {/* { {isLoading && <Loader/> } } */}
+            {isLoading && <Loader/> } 
+            {error && <p>{error}</p>}
             {repo.map((data) => (
                 <div key={data.id}>
                     <Link to={`code/repos/${data.name}`} >
                     <h3>{data.name}</h3>
-                    <p>{data.description}</p>
+                    <p className="">{data.description}</p>
                     <p>{data.stargazers_count}</p>
                     <p>{data.forks_count}</p>
                     <p>{data.watchers_count}</p>
