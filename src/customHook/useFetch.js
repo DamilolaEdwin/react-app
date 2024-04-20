@@ -7,6 +7,8 @@ function useFetch(url) {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const [currentPage, setCurrentPage] = useState(1)
+
   useEffect(function () {
     async function fetchRepo() {
       setIsLoading(true);
@@ -29,7 +31,7 @@ function useFetch(url) {
     }
     fetchRepo()
   }, [url]);
-  return {repo, isLoading, error}
+  return {repo, isLoading, error, currentPage, setCurrentPage}
 }
 export default useFetch
 
