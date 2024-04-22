@@ -1,7 +1,6 @@
 import useFetch from "../customHook/useFetch"
 import { useParams } from "react-router-dom"
 import Loader from "./Loader"
-import "/Users/Philip/Desktop/EXAMS/project/Css/Details.css"
 
 function Details(){
     const {name} = useParams()
@@ -19,8 +18,6 @@ function Details(){
                 <p>{repo.visibility}</p>
                 <p>{repo.url}</p>
                 <p>{repo.created_at}</p>
-                <p>{repo.fork}</p>
-                <p>{repo.has_downloads}</p>
                 <p>{repo.watchers}</p>
 
             </div>
