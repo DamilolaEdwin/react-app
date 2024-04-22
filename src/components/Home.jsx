@@ -1,7 +1,7 @@
 import useFetch from "../customHook/useFetch"
 import Loader from "./Loader"
 import { Link } from "react-router-dom"
-import "/Users/Philip/Desktop/EXAMS/project/Css/Home.css"
+import "./Home.css"
 
 function Home(){
     const {error, repo, isLoading, currentPage, setCurrentPage} = useFetch("https://api.github.com/users/DamilolaEdwin/repos")
