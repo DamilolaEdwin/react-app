@@ -1,6 +1,7 @@
 import useFetch from "../customHook/useFetch"
 import Loader from "./Loader"
 import { Link } from "react-router-dom"
+import "/Users/Philip/Desktop/EXAMS/project/Css/Home.css"
 
 function Home(){
     const {error, repo, isLoading, currentPage, setCurrentPage} = useFetch("https://api.github.com/users/DamilolaEdwin/repos")
@@ -46,10 +47,10 @@ function Home(){
             {error && <p>{error}</p>}
 
             {repo && postsPerPage.map((data) => (
-                <div key={data.id}>
+                <div className="dtw" key={data.id}>
                     <Link to={`code/repos/${data.name}`} >
-                    <h3>{data.name}</h3>
-                    <p className="">{data.description}</p>
+                    <h3 className="titleHead">{data.name}</h3>
+                    <p>{data.description}</p>
                     <p>{data.stargazers_count}</p>
                     <p>{data.forks_count}</p>
                     <p>{data.watchers_count}</p>
