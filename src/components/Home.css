@@ -34,6 +34,10 @@ body{
     transition: transform 0.2s;
 }
 
+.dtw:hover{
+    transform: translateY(-5px);
+}
+
 .titleHead{
     font-size: x-large;
     font-weight: bolder;
