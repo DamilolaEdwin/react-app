@@ -50,12 +50,7 @@ function Home(){
                 <div className="dtw" key={data.id}>
                     <Link to={`code/repos/${data.name}`} >
                     <h3 className="titleHead">{data.name}</h3>
-                    <p>{data.description}</p>
-                    <p>{data.stargazers_count}</p>
-                    <p>{data.forks_count}</p>
-                    <p>{data.watchers_count}</p>
-                    <p>{data.visibility}</p>
-                    <p>{data.url}</p>
+                    <p>Description: {data.description}</p>
                     </Link>
                 </div>
             ))}

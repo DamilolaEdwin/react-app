@@ -2,7 +2,12 @@ body{
    
     font-family: Lato;
     text-decoration: none;
-    background-color: skyblue
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .dtw{
@@ -11,7 +16,22 @@ body{
     text-decoration: none;
     background-color: white;
     color: black;
-    padding-block-start: -10px;
+    /* padding-block-start: -10px; */
+    width: 300px;
+    height: 300px;
+    border: solid 1px #fff;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    /* margin-inline-start: 150px; */
+    font-size: 200;
+  
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s;
 }
 
 .titleHead{
